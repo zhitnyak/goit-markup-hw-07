@@ -85,7 +85,7 @@ img {
 /* Studio */
 /* Header */
 
-.header-title {
+.header {
     position: sticky;
     z-index: 2;
     top: 0;
@@ -93,35 +93,6 @@ img {
 
     border-bottom: 1px solid var(--border-color);
     background-color: var(--main-bg-color);
-}
-
-.header-nav-menu {
-    display: flex;
-    align-items: center;
-}
-  
-.site-nav {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu {
-    display: flex;
-    margin-left: 93px;
-    position: relative;
-}
-
-.nav-menu-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.site-nav a {
-    color: inherit;
 }
 
 .logo {
@@ -134,15 +105,45 @@ img {
     padding-bottom: 24px;
 }
 
-.logo .logo-header {
+.logo .logo--header {
     color: var(--accent-text);
 }
 
-.logo .logo-footer {
+.logo .logo--footer {
     color: var(--white-text);
 }
 
-.nav-link {
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+  
+.header__nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    margin-left: 93px;
+    position: relative;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__nav a {
+    color: inherit;
+}
+
+.header__link {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -157,17 +158,17 @@ img {
 
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header__link:hover,
+.header__link:focus {
     color: var(--accent-text);
 }
 
-.nav-link.current {
+.header__link.current {
     position: relative;
     color: var(--accent-text);
 }
 
-.nav-link.current::after {
+.header__link.current::after {
   content: '';
   position: absolute;
   display: block;
@@ -180,26 +181,26 @@ img {
   background-color: var(--accent-text);
 }
 
-.contact-link {
+.contact__menu {
     display: flex;
     margin-left: auto;
 }
 
-.contact-menu {
+.contact__item {
     display: inline-flex;
     justify-content: center;
     align-items: center;
  }
 
-.contact-menu:not(:last-child) {
+.contact__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.contacts-item + .contacts-item {
+.contact__link:not(:first-child){
     margin-left: 50px;
   }
 
-.contact-item {
+.contact__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -213,12 +214,12 @@ img {
     transition: color var(--transition-function);
 }
     
-.contact-item:hover,
-.contact-item:focus {
+.contact__link:hover,
+.contact__link:focus {
     color: var(--accent-text);
 }
 
-.link-svg {
+.link__svg {
     fill: var(--second-text);
     margin-right: 10px;
     fill:  currentColor;

@@ -6,40 +6,40 @@
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./sass/base/_modern-normalize.scss">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header-title">
-        <div class="header-nav-menu container">
-            <nav class="site-nav">
-                    <a class="logo" href=""><span class="logo-header">Web</span>Studio</a>
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <a class="nav-link current" href="./index.html">Студия
+    <header class="header">
+        <div class="header__title container">
+            <nav class="header__nav">
+                    <a class="logo" href=""><span class="logo__header">Web</span>Studio</a>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a class="header__link current" href="./index.html">Студия
                             </a></li>
-                        <li class="nav-menu-item">
-                            <a class="nav-link" href="./portfolio.html">Портфолио
+                        <li class="header__item">
+                            <a class="header__link" href="./portfolio.html">Портфолио
                             </a>
                         </li>
-                        <li class="nav-menu-item">
-                            <a class="nav-link" href="#contacts">Контакты
+                        <li class="header__item">
+                            <a class="header__link" href="#contacts">Контакты
                             </a>
                         </li>
                     </ul>
             </nav>
-            <ul class="contact-link">
-                <li class="contact-menu">
-                    <a class="contact-item" href="mailo:info@devstudio.com">
-                        <svg class="link-svg" width="16" height="12">
+            <ul class="contact__menu">
+                <li class="contact__item">
+                    <a class="contact__link" href="mailo:info@devstudio.com">
+                        <svg class="link__svg" width="16" height="12">
                             <use href="./images/icons.svg#email">
                             </use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="contact-menu">
-                    <a class="contact-item" href="tel:+380961111111">
-                        <svg class="link-svg" width="10" height="16">
+                <li class="contact__item">
+                    <a class="contact__link" href="tel:+380961111111">
+                        <svg class="link__svg" width="10" height="16">
                             <use href="./images/icons.svg#phone">
                             </use>
                         </svg>+38 096 111 11 11
@@ -361,7 +361,7 @@
     <footer class="footer-main">
         <div class="footer container">
             <div class="footer-first">
-                <a class="logo" href="./index.html"><span class="logo-header">Web</span><span class="logo-footer">Studio</span></a>
+                <a class="logo" href="./index.html"><span class="logo-header">Web</span><span class="logo--footer">Studio</span></a>
                 <address class="footer-address">
                 <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="footer-list">
