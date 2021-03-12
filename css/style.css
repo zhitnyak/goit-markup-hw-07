@@ -105,7 +105,7 @@ img {
     padding-bottom: 24px;
 }
 
-.logo .logo--header {
+.logo .logo__header {
     color: var(--accent-text);
 }
 
@@ -443,7 +443,7 @@ img {
     border-radius: 2px;
 }
 
-.check:checked ~ .checkbox-icon {
+.check:checked .checkbox-icon {
     opacity: 1;
     border: none; 
 }
@@ -471,63 +471,6 @@ img {
 
     color: var(--second-text);
 } 
-
-
-/* .checkbox-icon .icon {
-    display: block;
-} */
-
-/*.check-box {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    margin-left: 12px;
-    border: 2px solid var(--main-text);
-    border-radius: 2px;
-    background-image: url(../images/uncheck.svg);
-}
-
-.input-checkbox:checked + .checkbox-icon ~ .check-box {
-    background-image: url(../images/check.svg);
-    border: none;
-}
-
-.input-checkbox:focus + .check-box {
-    background-image: url(../images/uncheck.svg);
-}
-
-.input-checkbox:checked:focus + .check-box {
-    background-image: url(../images/check.svg);
-} */
-
-/* .form-checkbox .label-checkbox {
-    display: flex;
-    align-items: center;
-  
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--second-text);
-    cursor: pointer;
-  }
-  
-  .label-checkbox a {
-    color: var(--accent-text);
-    opacity: 1;
-    margin-left: 5px;
-    transition: opacity var(--transition-function);
-  }
-  
-  .label-checkbox a:focus,
-  .label-checkbox a:hover {
-    opacity: 1;
-  }
-  
-  .label-checkbox:hover a {
-    opacity: 1;
-  } */
-
 
 .modal-form-btn {
     font-family: Roboto;
@@ -885,13 +828,6 @@ img {
     text-transform: uppercase;
 
     color: var(--white-text);
-}
-
-.team-link {
-    padding: 0 32px 30px;
-
-    display: flex;
-    align-items: center;
 }
 
 .footer-second-menu:not(:last-child) {

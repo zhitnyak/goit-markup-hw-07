@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/base/_modern-normalize.scss">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -49,57 +49,57 @@
         </div>
     </header>
     <main>
-        <section class="hero-main">
-            <div class="hero container">
-                <h1 class="title-hero">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+        <section class="hero">
+            <div class="hero__box container">
+                <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>   
-        <section class="postulates-main">
-            <div class="postulates container">
+        <section class="postulates">
+            <div class="postulates__box container">
                 <h2  class="visually-hidden">Постулаты компании</h2>
-                <ul class="postulates-name">
-                    <li class="postulates-name-item">
-                        <div class="postulates-thumb">
-                            <svg class="postulates-svg" width="70" height="70">
+                <ul class="postulates__name">
+                    <li class="postulates__item">
+                        <div class="postulates__thumb">
+                            <svg class="postulates__svg" width="70" height="70">
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="title-postulates">Внимание к деталям</h3>
-                        <p class="title-postulates-item">
+                        <h3 class="postulates__title">Внимание к деталям</h3>
+                        <p class="postulates__text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="postulates-name-item">
-                        <div class="postulates-thumb">
-                            <svg class="postulates-svg" width="70" height="70">
+                    <li class="postulates__item">
+                        <div class="postulates__thumb">
+                            <svg class="postulates__svg" width="70" height="70">
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>  
                         </div> 
-                        <h3 class="title-postulates">Пунктуальность</h3>
-                        <p class="title-postulates-item">
+                        <h3 class="postulates__title">Пунктуальность</h3>
+                        <p class="postulates__text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li> 
-                    <li class="postulates-name-item">
-                        <div class="postulates-thumb">
-                            <svg class="postulates-svg" width="70" height="70">
+                    <li class="postulates__item">
+                        <div class="postulates__thumb">
+                            <svg class="postulates__svg" width="70" height="70">
                             <use href="./images/icons.svg#diagram"></use>
                           </svg>  
                         </div> 
-                        <h3 class="title-postulates">Планирование</h3>
-                        <p class="title-postulates-item">
+                        <h3 class="postulates__title">Планирование</h3>
+                        <p class="postulates__text">
                             Равным образом консультация с широким активом в значительной степени обуславливает. 
                         </p>
                     </li>            
-                    <li class="postulates-name-item">
-                        <div class="postulates-thumb">
-                            <svg class="postulates-svg" width="70" height="70">
+                    <li class="postulates__item">
+                        <div class="postulates__thumb">
+                            <svg class="postulates__svg" width="70" height="70">
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="title-postulates">Современные технологии</h3>
-                        <p class="title-postulates-item">
+                        <h3 class="postulates__title">Современные технологии</h3>
+                        <p class="postulates__text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>            
@@ -108,7 +108,7 @@
         </section>
         <section class="function-main">
             <div class="function container">
-                <h2 class="title-function">Чем мы занимаемся</h2>
+                <h2 class="title__function">Чем мы занимаемся</h2>
                 <ul class="function-name">
                     <li class="function-name-item">
                         <div class="function-item-title">
@@ -358,48 +358,48 @@
              </div>
         </section>
     </main>
-    <footer class="footer-main">
-        <div class="footer container">
-            <div class="footer-first">
-                <a class="logo" href="./index.html"><span class="logo-header">Web</span><span class="logo--footer">Studio</span></a>
-                <address class="footer-address">
-                <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="footer-list">
-                        <li class="footer-item"><a class="footer-link" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="footer-item"><a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <footer class="footer">
+        <div class="footer__box container">
+            <div class="contact">
+                <a class="logo" href="./index.html"><span class="logo__header">Web</span><span class="logo--footer">Studio</span></a>
+                <address class="contact__card">
+                <p class="contact__address">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="contact__menu--footer">
+                        <li class="contact__item"><a class="contact__link--footer" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contact__item"><a class="contact__link--footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>  
             </div>  
-            <div class="footer-second">
-                <h3 class="footer-second-title">присоединяйтесь</h3>
-                <ul class="footer-second-name">
-                    <li class="footer-second-menu">
-                        <a class="footer-second-item" href="#">
-                            <svg class="footer-second-svg">
+            <div class="network">
+                <h3 class="network__title">присоединяйтесь</h3>
+                <ul class="network__menu">
+                    <li class="network__item">
+                        <a class="network__link network__link--card" href="#">
+                            <svg class="card__svg">
                                 <use href="./images/icons.svg#instagram">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-second-menu">
-                        <a class="footer-second-item" href="#">
-                            <svg class="footer-second-svg">
+                    <li class="network__item">
+                        <a class="network__link network__link--card" href="#">
+                            <svg class="card__svg">
                                 <use href="./images/icons.svg#twitter">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-second-menu">
-                        <a class="footer-second-item" href="#">
-                            <svg class="footer-second-svg">
+                    <li class="network__item">
+                        <a class="network__link network__link--card" href="#">
+                            <svg class="card__svg">
                                 <use href="./images/icons.svg#facebook">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-second-menu">
-                        <a class="footer-second-item" href="#">
-                            <svg class="footer-second-svg">
+                    <li class="network__item">
+                        <a class="network__link network__link--card" href="#">
+                            <svg class="card__svg">
                                 <use href="./images/icons.svg#linkedin">
                                 </use>
                             </svg>
@@ -407,17 +407,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-                <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
-                <div class="footer-form-box">
-                    <form class="footer-form-main" autocomplete="off">
-                    <div class="footer-form-thumb">
+            <div class="form">
+                <h3 class="form__title">Подпишитесь на рассылку</h3>
+                <div class="form__box">
+                    <form autocomplete="off">
+                    <div class="form__thumb">
                         <label>
-                            <input class="form-thumb-input" type="email" name="email" placeholder="E-mail">
+                            <input class="form__input" type="email" name="email" placeholder="E-mail">
                         </label>
-                        <div class="form-thumb-btn">
-                            <button class="form-btn" type="submit">
-                                <svg class="form-svg">
+                        <div class="form-thumb--btn">
+                            <button class="form__btn" type="submit">
+                                <svg class="form__svg">
                                     <use href="./images/icons.svg#send" width="24" height="24"></use>
                                 </svg>
                                 Подписаться
@@ -440,62 +440,62 @@
         
         document.body.style.paddingTop = '${pageHeaderHeight}px';
     </script> -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="order-modal">
-            <h3 class="form-name">Оставьте свои данные, мы вам перезвоним</h3>
-            <form class="form-title">
-                <div class="form-box">
-                    <label class="form-lable" for="username">Имя</label>
-                    <div class="form-thumb">
-                        <input class="form-imput" type="text" name="username" id="username">
-                        <svg class="form-icon">
+    <div class="order__backdrop is-hidden" data-modal>
+        <div class="order__modal">
+            <h3 class="order__title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form>
+                <div class="order__box">
+                    <label class="order__lable" for="username">Имя</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="text" name="username" id="username">
+                        <svg class="order__icon">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-box">
-                    <label class="form-lable" for="phone">Телефон</label>
-                    <div class="form-thumb">
-                        <input class="form-imput" type="tel" name="phone" id="phone">
-                        <svg class="form-icon">
+                <div class="order__box">
+                    <label class="order__lable" for="phone">Телефон</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="tel" name="phone" id="phone">
+                        <svg class="order__icon">
                             <use href="./images/icons.svg#phone2"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-box">
-                    <label class="form-lable" for="email">Почта</label>
-                    <div class="form-thumb">
-                        <input class="form-imput" type="email" name="email" id="email">
-                        <svg class="form-icon">
+                <div class="order__box">
+                    <label class="order__lable" for="email">Почта</label>
+                    <div class="order__thumb">
+                        <input class="order__imput" type="email" name="email" id="email">
+                        <svg class="order__icon">
                             <use href="./images/icons.svg#email2"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-box">
-                    <label class="form-lable" for="comment">Комментарий</label>
-                    <div class="form-thumb">
-                        <textarea class="form-textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                <div class="order__box">
+                    <label class="order__lable" for="comment">Комментарий</label>
+                    <div class="order__thumb">
+                        <textarea class="order__textarea" name="comment" id="comment" placeholder ="Введите текст"></textarea>
                     </div>
                 </div>
-                <div class="form-checkbox">
-                    <label class="lable-checkbox" for="check">
+                <div class="order__checkbox">
+                    <label class="order--lable" for="check">
                         <input class="check" type="checkbox" name="agreement" id="check">
-                        <svg class="checkbox-icon" width="16" height="15">
+                        <svg class="checkbox__icon" width="16" height="15">
                             <use href="./images/icons.svg#check"></use>
                         </svg>
                         <span class="check-box"></span>
 
-                        <span class="check-text">
+                        <span class="check__text">
                             Соглашаюсь с рассылкой и принимаю&#160; 
-                            <a class="check-link" href="#">Условия договора</a>
+                            <a class="check__link" href="#">Условия договора</a>
                         </span>
                 </label>
                 </div>
-                <button class="modal-form-btn" type="submit">Отправить</button>
+                <button class="modal__btn" type="submit">Отправить</button>
             </form>
     
-            <button class="order-close" type="button" data-modal-close>
-            <svg class="order-close-svg" width="11" height="11">
+            <button class="order__close" type="button" data-modal-close>
+            <svg class="order__svg" width="11" height="11">
                 <use href="./images/icons.svg#close"></use>
             </svg>
             </button>
