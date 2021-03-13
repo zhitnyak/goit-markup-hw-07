@@ -63,7 +63,7 @@
     color: var(--accent-text);
 
 
-&.current::after {
+&::after {
   content: '';
   position: absolute;
   display: block;
@@ -106,7 +106,7 @@
     color: var(--second-text);
     transition: color var(--transition-function);
 
-.contact__link:not(:first-child){
+&:not(:first-child){
     margin-left: 50px;
 }
     
