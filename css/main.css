@@ -526,6 +526,7 @@ img {
 .contact {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--accenr-bg-color);
 }
 
 .contact__address {
@@ -536,20 +537,25 @@ img {
   margin-bottom: 9px;
 }
 
+.contact__item--footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 .contact__item--footer:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .contact__link--footer {
-  color: var(--address-color-link);
+  color: var(--second-text-op60);
 }
 
 .contact__link--footer:hover, .contact__link--footer:focus {
-  color: var(--accent-color);
-}
-
-.contact {
-  background-color: var(--accenr-bg-color);
+  color: var(--accent-text);
+  -webkit-transition: color var(--transition-function);
+  transition: color var(--transition-function);
 }
 
 .contact__card {
@@ -557,21 +563,8 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--white-text);
   margin-top: 20px;
-}
-
-.contact__item--footer {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--second-text-op60);
-}
-
-.contact__link--footer:hover,
-.contact__link--footer:focus {
-  color: var(--accent-text);
+  color: var(--white-text);
 }
 
 .form {
@@ -697,7 +690,7 @@ img {
   background-color: var(--accent-text);
 }
 
-.backdrop {
+.order__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1053,15 +1046,6 @@ img {
   height: 120px;
 }
 
-.postulates__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-
 .postulates__text {
   font-weight: 400;
   font-size: 14px;
@@ -1393,8 +1377,12 @@ img {
   overflow: hidden;
 }
 
-.object__link:hover,
-.object__link:focus {
+.object__link {
+  -webkit-transition: color var(--transition-function);
+  transition: color var(--transition-function);
+}
+
+.object__link:hover, .object__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

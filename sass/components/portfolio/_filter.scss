@@ -1,3 +1,4 @@
+// Filter
 .portfolio {
     padding-top: 101px;
     padding-bottom: 94px;
@@ -6,10 +7,10 @@
 .portfolio__name {
     display: flex;
     justify-content: center;
-}
 
-.portfolio__name--item:not(:last-child) {
+&--item:not(:last-child) {
     margin-right: 8px;
+}
 }
 
 .portfolio__button--item {
@@ -84,9 +85,13 @@
     overflow: hidden;
 }
 
-.object__link:hover,
-.object__link:focus {
+.object__link {
+  transition: color var(--transition-function);  
+
+&:hover,
+&:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
 .title__filter {

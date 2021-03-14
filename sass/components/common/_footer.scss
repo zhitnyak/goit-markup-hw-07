@@ -1,3 +1,4 @@
+// Footer
 .footer {
     background-color: var(--accenr-bg-color);
 }
@@ -54,7 +55,6 @@
     fill: currentColor;
 }
 
-
 .network__menu,
 .network__item {
     display: flex;
@@ -63,6 +63,8 @@
 .contact {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background-color: var(--accenr-bg-color);
 }
 
 .contact__address {
@@ -72,22 +74,26 @@
 .contact__menu--footer {
     margin-bottom: 9px;
 }
-  
-.contact__item--footer:not(:last-child) {
+
+.contact__item--footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+&:not(:last-child) {
     margin-bottom: 9px;
-}
-  
-.contact__link--footer {
-    color: var(--address-color-link);
-  
-&:hover,
-&:focus {
-    color: var(--accent-color);
 }
 }
 
-.contact {
-    background-color: var(--accenr-bg-color);
+.contact__link--footer {
+    color: var(--second-text-op60);
+  
+&:hover,
+&:focus {
+    color: var(--accent-text);
+    transition: color var(--transition-function);
+} 
 }
 
 .contact__card {
@@ -96,24 +102,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-    color: var(--white-text);
-
     margin-top: 20px;
+
+    color: var(--white-text);
 }
-
-.contact__item--footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-
-    color: var(--second-text-op60);
-}
-
-.contact__link--footer:hover,
-.contact__link--footer:focus {
-      color: var(--accent-text);
-    } 
 
 .form {
     margin-left: 93px;

@@ -1,3 +1,4 @@
+// Logo
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -6,11 +7,12 @@
 
     padding-top: 24px;
     padding-bottom: 24px;
-}
-.logo .logo__header {
+
+& .logo__header {
     color: var(--accent-text);
 }
 
-.logo .logo--footer {
+& .logo--footer {
     color: var(--white-text);
+}
 }
